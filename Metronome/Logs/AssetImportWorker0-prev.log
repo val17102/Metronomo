@@ -15,11 +15,11 @@ D:/UVG 2021/Musica/Metronomo/Metronome
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1098
+1099
 Successfully changed project path to: D:/UVG 2021/Musica/Metronomo/Metronome
 D:/UVG 2021/Musica/Metronomo/Metronome
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.01 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 34.14 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -35,148 +35,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002811 seconds.
+Registered in 0.002600 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 34.04 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 34.03 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
+- Completed reload, in  1.304 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000654 seconds.
+Registered in 0.000693 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 34.63 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.20 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.909 seconds
+- Completed reload, in  0.875 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 84.9 MB.
 System memory in use after: 84.9 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2254.
-Total: 3.566000 ms (FindLiveObjects: 0.329200 ms CreateObjectMapping: 0.131100 ms MarkObjects: 2.912700 ms  DeleteObjects: 0.191000 ms)
+Total: 1.843200 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.075800 ms MarkObjects: 1.468200 ms  DeleteObjects: 0.114800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/NewBehaviourScript.cs
-  artifactKey: Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewBehaviourScript.cs using Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b0ae0017d3fc0dc8c511b24ca5be97') in 0.088136 seconds
-  Import took 0.090967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.520045 seconds.
-  path: Assets/Ritmo.cs
-  artifactKey: Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ritmo.cs using Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7cb241e1d9430601e249dbac3a6845') in 0.006666 seconds
-  Import took 0.010785 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000689 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.842 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.9 MB.
-System memory in use after: 84.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2258.
-Total: 2.387400 ms (FindLiveObjects: 0.343900 ms CreateObjectMapping: 0.114400 ms MarkObjects: 1.824700 ms  DeleteObjects: 0.103200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000777 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.9 MB.
-System memory in use after: 84.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2262.
-Total: 2.403900 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.073800 ms MarkObjects: 2.007700 ms  DeleteObjects: 0.124700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 350.468037 seconds.
-  path: Assets/Ritmo.cs
-  artifactKey: Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ritmo.cs using Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01230e41356bfa1e80712b3e7412a110') in 0.010259 seconds
-  Import took 0.012990 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001036 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.9 MB.
-System memory in use after: 84.9 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
-Total: 2.167500 ms (FindLiveObjects: 0.327700 ms CreateObjectMapping: 0.106200 ms MarkObjects: 1.630600 ms  DeleteObjects: 0.101200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1418.420402 seconds.
-  path: Assets/Ritmo.cs
-  artifactKey: Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ritmo.cs using Guid(3b3d5473f626a1d489f75e223b52502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c38b30ee9a5126330aac9613082b8a') in 0.008119 seconds
-  Import took 0.010682 seconds .
+  path: Assets/Metronomo.cs
+  artifactKey: Guid(a41f3af19eec5684e995380ebccfed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Metronomo.cs using Guid(a41f3af19eec5684e995380ebccfed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac017eaa6d2e17aad228e2c9552e091') in 0.025542 seconds
+  Import took 0.028493 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

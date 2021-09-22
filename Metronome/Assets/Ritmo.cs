@@ -146,4 +146,8 @@ public class Ritmo : MonoBehaviour
     public int[] getRelleno(){
         return relleno;
     }
+
+    public int getRitmo(){
+        return ritmo;
+    }
 }

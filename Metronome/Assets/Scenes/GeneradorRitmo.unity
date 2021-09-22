@@ -1722,6 +1722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453942371}
   - component: {fileID: 1453942370}
+  - component: {fileID: 1453942372}
   m_Layer: 0
   m_Name: Generador
   m_TagString: Untagged
@@ -1760,6 +1761,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453942372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453942369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f03975f8d62b4cbb8f7965f8b0c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compasNum: 8
 --- !u!1 &1479509095
 GameObject:
   m_ObjectHideFlags: 0

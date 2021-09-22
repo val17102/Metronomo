@@ -1,12 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Metronomo
+    - Player
+    - Ritmo
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -32,8 +32,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/GeneradorRitmo.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -57,21 +58,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1486}
     - Class: 114
+      Script: {instanceID: 1598}
+    - Class: 114
       Script: {instanceID: 2072}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2588}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2592}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2762}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 3074}
+    - Class: 114
+      Script: {instanceID: 4144}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,6 +216,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Calculadora2
+  - hash:
+      serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -221,6 +232,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: EnumerableTestState
+  - hash:
+      serializedVersion: 2
+      Hash: 64ccce05c936d13470eaf3b821034ee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -373,6 +390,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 9e497fc846b2592cfb10ca4eb076c410
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Calculadora
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -523,6 +546,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 2b2d168de5d483e030ce04016781b8bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ritmo
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -613,5 +642,5 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 20
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/UVG 2021/Musica/Tarea Metronomo
+  - Assets/Scenes/GeneradorRitmo.unity
+  playerPath: D:/UVG 2021/Musica/Tarea Metronomo/Build2

@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     private InputField bpm;
     [SerializeField]
     private InputField escala;
+    [SerializeField]
+    private Text acordeActual;
     private float beatDuration = 60.0f/80.0f;
     private int subdivision = 1;
     private int[] clave, relleno;
@@ -124,6 +126,7 @@ public class Player : MonoBehaviour
                 setNote1(temp[0]);
                 setNote2(temp[1]);
                 setNote3(temp[2]);
+                acordeActual.text = "Acorde Actual: "+temp[0]+" "+temp[1]+" "+temp[2];
             }
 
         }

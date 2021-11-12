@@ -17,11 +17,29 @@ public class Ritmo : MonoBehaviour
     private int[] subdivision = {1,2,4};
     private int[] grupos = {2,3};
     private int[] relleno2 = {0,1}, relleno3 = {0,1,1}, clave2 = {1,0}, clave3 = {1,0,0};
+    Dictionary<string, int[]> rellenoD = new Dictionary<string, int[]>(){
+        {"2-1", new int[] {0,1,1,1,1,1,1,1}},
+        {"2-2", new int[] {0,1,1,1}},
+        {"2-4", new int[] {0,1}},
+        {"3-1", new int[] {0,1,1,1,1,1,1,1,1,1,1,1}},
+        {"3-2", new int[] {0,1,1,1,1,1}},
+        {"3-4", new int[] {0,1,1}},
+    };
+
+    Dictionary<string, int[]> claveD = new Dictionary<string, int[]>(){
+        {"2-1", new int[] {1,0,0,0,0,0,0,0}},
+        {"2-2", new int[] {1,0,0,0}},
+        {"2-4", new int[] {1,0}},
+        {"3-1", new int[] {1,0,0,0,0,0,0,0,0,0,0,0}},
+        {"3-2", new int[] {1,0,0,0,0,0}},
+        {"3-4", new int[] {1,0,0}},
+    };
     public bool seedG;
     private int seedU;
 
     private int ritmo, subFinal;
     private int[] clave, relleno, claveFinal;
+    private List<int> claveV2, rellenoV2;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +55,6 @@ public class Ritmo : MonoBehaviour
         ritmo = generarRitmo(0);
         txt.text += "Ritmo "+ritmo+"/4 \n";
         clave = crearClave(ritmo);
-        Debug.Log("Clave "+clave);
         txt.text += "Clave: ";
         foreach(var x in clave){
             txt.text += x + " ";
@@ -46,12 +63,12 @@ public class Ritmo : MonoBehaviour
         claveFinal = rellenarClave(clave);
         relleno = crearRelleno(clave);
         txt.text += "Clave Principal: ";
-        foreach(var x in claveFinal){
+        foreach(var x in claveV2){
             txt.text += x + " ";
         }
         txt.text += "\n";
         txt.text += "Relleno: ";
-        foreach(var x in relleno){
+        foreach(var x in rellenoV2){
             txt.text += x + " ";
         }
     }
@@ -103,12 +120,26 @@ public class Ritmo : MonoBehaviour
 
     private int[] crearRelleno(int[] clave){
         List<int> relleno = new List<int>();
+        rellenoV2 = new List<int>();
         for (int i= 0; i< clave.Length; i++){
-            if (clave[i] == 2) 
-                relleno.AddRange(relleno2);
-            if (clave[i] == 3)
-                relleno.AddRange(relleno3);
+            rellenoV2.AddRange(rellenoD[clave[i].ToString()+"-"+subFinal.ToString()]);
         }
+        for (int i = 0; i < rellenoV2.Count; i++){
+            if (rellenoV2[i] == 1){
+                rellenoV2[i] = Random.Range(0,2);
+            }
+        }
+        for (int i = 0; i < 8; i++){
+            foreach(var k in rellenoV2){
+                relleno.Add(k);
+            }
+        }
+        string s = "";
+        foreach(var j in rellenoV2){
+            s+= j.ToString();
+        }
+        Debug.Log("RellenoV2 "+s);
+        Debug.Log("Tamano "+s.Length);
 
         return relleno.ToArray();
 
@@ -116,12 +147,21 @@ public class Ritmo : MonoBehaviour
 
     private int[] rellenarClave(int[] clave){
         List<int> claveF = new List<int>();
+        claveV2 = new List<int>();
         for (int i= 0; i< clave.Length; i++){
-            if (clave[i] == 2) 
-                claveF.AddRange(clave2);
-            if (clave[i] == 3)
-                claveF.AddRange(clave3);
+            claveV2.AddRange(claveD[clave[i].ToString()+"-"+subFinal.ToString()]);
         }
+        for (int i = 0; i < 8; i++){
+            foreach(var k in claveV2){
+                claveF.Add(k);
+            }
+        }
+        string s = "";
+        foreach(var j in claveV2){
+            s+= j.ToString();
+        }
+        Debug.Log("ClaveV2 "+s);
+        Debug.Log("Tamano "+s.Length);
 
         return claveF.ToArray();
     }

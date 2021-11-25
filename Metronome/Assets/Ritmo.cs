@@ -40,42 +40,47 @@ public class Ritmo : MonoBehaviour
     private int ritmo, subFinal;
     private int[] clave, relleno, claveFinal;
     private List<int> claveV2, rellenoV2;
+    public int compas = 8;
 
     // Start is called before the first frame update
     void Start()
     {   
-        Generar();
-        generar.onClick.AddListener(delegate {Generar();});
+        //Generar("F1");
+        //generar.onClick.AddListener(delegate {Generar("F1");});
         usarSeed.onValueChanged.AddListener(delegate {ElegirSeed();});
 
     }
 
-    public void Generar(){
-        txt.text = "";
-        ritmo = generarRitmo(0);
-        txt.text += "Ritmo "+ritmo+"/4 \n";
+    public void Generar(string nombre){
+        txt.text += nombre+"\n";
         clave = crearClave(ritmo);
         txt.text += "Clave: ";
         foreach(var x in clave){
             txt.text += x + " ";
         }
-        txt.text += "\n";
+        txt.text += "\t";
         claveFinal = rellenarClave(clave);
         relleno = crearRelleno(clave);
         txt.text += "Clave Principal: ";
         foreach(var x in claveV2){
             txt.text += x + " ";
         }
-        txt.text += "\n";
+        txt.text += "\t";
         txt.text += "Relleno: ";
         foreach(var x in rellenoV2){
             txt.text += x + " ";
         }
     }
 
-    private int generarRitmo(int seed) {
+    public void iniciarRitmo(int seed) {
+        txt.text = "";
         int SeedI;
         int c;
+        claveV2 = new List<int>();
+        rellenoV2 = new List<int>();
+        clave = claveV2.ToArray();
+        relleno = clave2.ToArray();
+        claveFinal = clave2.ToArray();
         List<int> tiempo = new List<int>(){
             3,4
         };
@@ -89,18 +94,17 @@ public class Ritmo : MonoBehaviour
         Random.InitState(SeedI);
 
         c = Random.Range(0,tiempo.Count);
-        return (tiempo[c]);
-
-        
-    }
-
-    private int[] crearClave(int tiempo){
-        int r = 0;
+        ritmo = tiempo[c];
         int subR = Random.Range(0, subdivision.Length);
         txt.text += "Subdivision: "+subdivision[subR];
         txt.text += "\n";
         subFinal = subdivision[subR];
-        int subC = tiempo * subdivision[subR];
+        txt.text += "Ritmo "+ritmo+"/4 \n";
+    }
+
+    private int[] crearClave(int tiempo){
+        int r = 0;
+        int subC = tiempo * subFinal;
         List<int> agrupaciones = new List<int>();
         while (r <subC){
             r = agrupaciones.Sum();
@@ -129,7 +133,7 @@ public class Ritmo : MonoBehaviour
                 rellenoV2[i] = Random.Range(0,2);
             }
         }
-        for (int i = 0; i < 8; i++){
+        for (int i = 0; i < compas; i++){
             foreach(var k in rellenoV2){
                 relleno.Add(k);
             }
@@ -151,7 +155,7 @@ public class Ritmo : MonoBehaviour
         for (int i= 0; i< clave.Length; i++){
             claveV2.AddRange(claveD[clave[i].ToString()+"-"+subFinal.ToString()]);
         }
-        for (int i = 0; i < 8; i++){
+        for (int i = 0; i < compas; i++){
             foreach(var k in claveV2){
                 claveF.Add(k);
             }

@@ -39,8 +39,23 @@ public class Calculadora2 : MonoBehaviour
         third2 = g + 4;
         third1 %= 7;
         third2 %= 7;
-        Debug.Log(scale[g]+","+scale[third1]+","+scale[third2]);
+        //Debug.Log(scale[g]+","+scale[third1]+","+scale[third2]);
         return new string[] {scale[g],scale[third1],scale[third2]};
+    }
+
+    public int[] CalcularPosiblesNotas(int grado){
+        int third1 = 0, third2 = 0;
+        int g =  grado - 1;
+        third1 = g + 2;
+        third2 = g + 4;
+        third1 %= 7;
+        third2 %= 7;
+        //Debug.Log(scale[g]+","+scale[third1]+","+scale[third2]);
+        return new int[] {g,third1,third2};
+    }
+
+    public string GetNoteScale(int grado){
+        return scale[grado];
     }
 
     public void CalcularEscalaMayor(string note){

@@ -6,7 +6,7 @@ using System.Linq;
 public class Compas : MonoBehaviour
 {
     [SerializeField]
-    private int compasNum = 8;
+    public int compasNum = 8;
     public int tempRitmo = 4;
     // Start is called before the first frame update
     public List<float> durationList = new List<float>();
@@ -44,7 +44,7 @@ public class Compas : MonoBehaviour
         int temp2;
 
         while (sum != totalNotes){
-            Debug.Log(".");
+            //Debug.Log(".");
             sum = durationList.Sum();
             numCom = (int) sum / ritmo;
 
